@@ -85,6 +85,8 @@ typedef NS_ENUM(NSUInteger, STPopupTransitionStyle) {
  */
 @property (nonatomic, assign) STPopupTransitionStyle transitionStyle;
 
+@property (nonatomic, assign) BOOL adjustsContainerViewOriginForKeyboardHeight;
+
 /**
  Custom defined transitioning, it will be used if "transitionStyle" is set to STPopupTransitionStyleCustom
  */

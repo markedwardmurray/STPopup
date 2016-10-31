@@ -669,6 +669,10 @@ static NSMutableSet *_retainedPopupControllers;
 
 - (void)adjustContainerViewOrigin
 {
+    if (!_adjustsContainerViewOriginForKeyboardHeight) {
+        return;
+    }
+    
     if (!_keyboardInfo) {
         return;
     }
